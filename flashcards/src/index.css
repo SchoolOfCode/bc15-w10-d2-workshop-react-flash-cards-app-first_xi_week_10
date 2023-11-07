@@ -12,6 +12,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
+    text-align: center;
 }
 
 .header--logo{
@@ -32,3 +33,34 @@
   padding: 0;
  }
 
+ .form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+ }
+
+ .form--input {
+  background-color: #2f323c;
+  margin: 20px;
+  border-radius: 7px;
+  height: 30px;
+  width: 80%;
+  box-shadow: none;
+  border-style: none;
+ }
+
+ .form--label {
+  color: white;
+  font-size: 0.9rem;
+ }
+
+ .form--add {
+  background-color: #06B1DF;
+  border-radius: 7px;
+  color: white;
+  height: 40px;
+  width: 25%;
+ }
