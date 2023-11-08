@@ -1,5 +1,5 @@
 .App {
-  background-color: #16181f;
+  background-color: #16181F;
   font-family: Arial, Helvetica, sans-serif;
 }
    /* form container 232731
@@ -14,25 +14,21 @@
   padding: 0;
     text-align: center;
 }
-
 .header--logo{
   width: 100px;
   margin: 30px 0;
   padding: 0;
- 
  }
  .header--title{
   color: white;
   margin: 0;
  }
-
  .header--subtitle{
   color: white;
-  margin: 10px 0; 
+  margin: 10px 0;
   margin-bottom: 20px;
   padding: 0;
  }
-
  .form {
   display: flex;
   flex-direction: row;
@@ -41,9 +37,8 @@
   width: 80%;
   margin: auto;
  }
-
  .form--input {
-  background-color: #2f323c;
+  background-color: #2F323C;
   margin: 20px;
   border-radius: 7px;
   height: 30px;
@@ -51,12 +46,10 @@
   box-shadow: none;
   border-style: none;
  }
-
  .form--label {
   color: white;
   font-size: 0.9rem;
  }
-
  .form--add {
   background-color: #06B1DF;
   border-radius: 7px;
@@ -64,3 +57,9 @@
   height: 40px;
   width: 25%;
  }
+.flashcard--container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323949;
+}
