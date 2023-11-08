@@ -34,15 +34,17 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  background-color: #232731;
+  padding-bottom: 40px;
  }
  .form--input {
   background-color: #2F323C;
   margin: 20px;
   border-radius: 7px;
   height: 30px;
-  width: 80%;
+  width: 15%;
   box-shadow: none;
   border-style: none;
  }
@@ -55,11 +57,50 @@
   border-radius: 7px;
   color: white;
   height: 40px;
-  width: 25%;
+  width: 10%;
  }
-.flashcard--container{
+
+ .flashcards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: center;
+  margin: auto;
+  background-color: #232731;
+ }
+
+.flashcard{
   display: flex;
   flex-direction: column;
+  width: 95%;
+  flex: 1 1;
   align-items: center;
   background-color: #323949;
+  color: white;
+  border-radius: 5px;
+  margin: 10px auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.flashcard--emoji {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.flashcard--delete {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  align-self: flex-end;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.flashcard--question {
+  padding: 0 20px;
 }
