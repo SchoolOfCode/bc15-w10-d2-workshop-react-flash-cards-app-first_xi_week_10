@@ -7,6 +7,10 @@ import { data } from "./Data";
 function App() {
   const [cardData, setCardData] = useState(data);
 
+  function addCard(event, newCardData) {
+    setCardData((prevCardData) => {return [...prevCardData, newCardData]})
+  }
+
   function deleteCard(event, id) {
     event.stopPropagation();
 
@@ -17,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Form />
+      <Form addCard={addCard} />
       <Flashcards data={cardData} deleteCard={deleteCard} />
     </div>
   );

@@ -1,8 +1,8 @@
 .App {
-  background-color: #16181F;
+  background-color: #16181f;
   font-family: Arial, Helvetica, sans-serif;
 }
-   /* form container 232731
+/* form container 232731
   cards 323949
   background 2f323c */
 .header {
@@ -12,24 +12,24 @@
   align-items: center;
   margin: 0;
   padding: 0;
-    text-align: center;
+  text-align: center;
 }
-.header--logo{
+.header--logo {
   width: 100px;
   margin: 30px 0;
   padding: 0;
- }
- .header--title{
+}
+.header--title {
   color: white;
   margin: 0;
- }
- .header--subtitle{
+}
+.header--subtitle {
   color: white;
   margin: 10px 0;
   margin-bottom: 20px;
   padding: 0;
- }
- .form {
+}
+.form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,38 +38,39 @@
   margin: auto;
   background-color: #232731;
   padding-bottom: 40px;
- }
- .form--input {
-  background-color: #2F323C;
+}
+.form--input {
+  background-color: #2f323c;
   margin: 20px;
   border-radius: 7px;
   height: 30px;
   width: 15%;
   box-shadow: none;
   border-style: none;
- }
- .form--label {
+  color: white;
+}
+.form--label {
   color: white;
   font-size: 0.9rem;
- }
- .form--add {
-  background-color: #06B1DF;
+}
+.form--add {
+  background-color: #06b1df;
   border-radius: 7px;
   color: white;
   height: 40px;
   width: 10%;
- }
+}
 
- .flashcards {
+.flashcards {
   display: grid;
   width: 100%;
-  grid-template-columns: 32% 32% 32%;
+  grid-template-columns: 98%;
   justify-content: center;
   margin: auto;
   background-color: #232731;
- }
+}
 
-.flashcard{
+.flashcard {
   display: flex;
   flex-direction: column;
   width: 95%;
@@ -103,4 +104,22 @@
 
 .flashcard--question {
   padding: 0 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .flashcards {
+    grid-template-columns: 49% 49%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .flashcards {
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .flashcards {
+    grid-template-columns: 24% 24% 24% 24%;
+  }
 }
