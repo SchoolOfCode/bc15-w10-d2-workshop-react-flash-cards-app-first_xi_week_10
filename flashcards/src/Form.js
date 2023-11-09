@@ -30,10 +30,13 @@ export default function Form(props) {
 
   return (
     <div className="form">
-      <p className="form--label">Question:</p>
-      <input className="form--input" type="text" onChange={handleChange} name="question" value={formData.question} />
-      <p className="form--label">Answer:</p>
-      <input className="form--input" type="text" name="answer" onChange={handleChange} value={formData.answer} />
+     
+     <label className="form--label" for="form--question">Question:</label>
+      <input id="form--question" className="form--input" type="text" onChange={handleChange} name="question" value={formData.question} />
+
+      <label className="form--label" for="form--answer">Answer:</label>
+
+      <input id="form--answer" className="form--input" type="text" name="answer" onChange={handleChange} value={formData.answer} />
       <button className="form--add" onClick={addCard}>Add</button>
     </div>
   );
