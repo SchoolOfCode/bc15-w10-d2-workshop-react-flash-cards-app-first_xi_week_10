@@ -1,1 +1,1 @@
-Feel free to delete this and start from scratch.
+This app was developed for honing our skills in managing state and props within the React framework. It functions as a flashcard-style question-and-answer quiz designed to assist students in revising content within their respective fields.
